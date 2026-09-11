@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Still — a calm weekly operating system for multiple long-term commitments." />
+  <title>Still — Weekly Operating System</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Main navigation">
+      <button class="brand" data-view="this-week" aria-label="Still home">
+        <span class="brand-name">Still</span>
+        <span class="brand-sub">LIFE PLANNER</span>
+      </button>
+      <nav class="nav" id="nav"></nav>
+      <p class="sidebar-note">A calm place for classes, work, and everything between.</p>
+    </aside>
+
+    <div class="workspace">
+      <header class="topbar">
+        <div class="mobile-brand"><span>Still</span></div>
+        <div class="topbar-actions">
+          <span class="demo-badge">PORTFOLIO DEMO · LOCAL DATA</span>
+          <button class="ghost-button" id="quickAddButton">＋ <span data-i18n="add">Add</span></button>
+          <button class="text-button" id="languageButton">中文</button>
+          <button class="text-button" id="resetButton" data-i18n="reset">Reset demo</button>
+        </div>
+      </header>
+
+      <main id="main" class="main"></main>
+    </div>
+  </div>
+
+  <div id="modalRoot"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
